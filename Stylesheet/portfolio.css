@@ -169,6 +169,13 @@ footer {
     z-index: -1; /* This places the video behind the other elements on the page */
 }
 
+/* Screens that are 576px and smaller will not display the background video */
+@media screen and (max-width: 576px) {
+    #Typing_Video {
+        display: none;
+    }
+}
+
 /* Texts over the video */
 .Video_Text {
     background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparents background for the text to sit over */
