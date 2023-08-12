@@ -1,2 +1,3 @@
 # README
-## This repository holds all files for my portfolio website, which is hosted on github pages.
+## Repository data includes:
+### - Portfolio website(hosted on github pages)
