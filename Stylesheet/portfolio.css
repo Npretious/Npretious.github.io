@@ -169,12 +169,7 @@ footer {
     z-index: -1; /* This places the video behind the other elements on the page */
 }
 
-/* Screens that are 576px and smaller will not display the background video */
-@media screen and (max-width: 576px) {
-    #Typing_Video {
-        display: none;
-    }
-}
+
 
 /* Texts over the video */
 .Video_Text {
@@ -526,4 +521,6 @@ button:hover, .form-container .btn:hover {
         margin-top: 0;
     }
 }
+
+
 /***** End of Media Query Section *****/
