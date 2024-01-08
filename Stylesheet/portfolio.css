@@ -36,7 +36,7 @@ h1{
 h1:hover {
     filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
     transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
-    transition: tranform 1s; /* This causes the transformation to last 1 second */
+    transition: transform 1s; /* This causes the transformation to last 1 second */
 }
 
 /* Styling for portfolio title text */
@@ -47,7 +47,7 @@ h1:hover {
 
 /* Paragraph elements */
 p {
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: Perpetual, Rockwell Extra Bold;
     text-align: justify; /* This justifies the text within paragraph elements */
     letter-spacing: .1vw; /* This expands the text slightly */
     font-size: 2.5vw; /* Relative font sizing equal to 2.5% of the viewport width */
@@ -58,7 +58,7 @@ p {
 /* Paragraph element hover effect */
 p:hover {
     transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
-    transition: tranform 1s; /* This makes the transform effect last 1 second */
+    transition: transform 1s; /* This makes the transform effect last 1 second */
 }
 
 /* Center class - this applies to all elements with the class "center" */
@@ -69,7 +69,7 @@ p:hover {
 /* Center class hover effect - This only affects the quote, github link, and footer */
 .center:hover {
     transform: scale(1.1); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
-    transition: tranform 2s; /* This makes the transform effect last 2 seconds */
+    transition: transform 2s; /* This makes the transform effect last 2 seconds */
 }
 
 /* Anchor elements */
@@ -200,7 +200,7 @@ footer {
 
 /***** Slideshow Styling *****/
 #Slideshow_Background {
-    background: rgba(255, 255, 255, 0.35); /* This creates a slightly transparent white background that's palced over the video in the background */    
+    background: rgba(255, 255, 255, 0.35); /* This creates a slightly transparent white background that's placed over the video in the background */    
 }
 
 .mySlides{
@@ -209,7 +209,7 @@ footer {
 
 /* Slideshow section / container */
 #Slideshow_Container {
-    width: 39.5vw; /* Relative sizing of the container for the slidewshow set to 39.5% of the viewport width */
+    width: 39.5vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
     height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
     padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
     position: relative; /* This sets the container relative to its normal positioning */
@@ -264,7 +264,7 @@ footer {
     bottom: 0; /* This property sets the text at the bottom of the image */
     width: 100%; /* The element covers the full width of the image */
     text-align: center; /* The text is center aligned within the image */
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: Perpetual, Rockwell Extra Bold;
     letter-spacing: .1vw; /* This gives slight spacing between the letters */
     font-size: 1.5vw; /* Font size is relative to the size of the viewport width */
     background-color: rgba(0, 0, 0, 0.75); /* Gives a slightly transparent black background */
