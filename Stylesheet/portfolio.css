@@ -15,6 +15,7 @@ body {
     font-size: 1.5vw;
     overflow-x: hidden; /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
     user-select: none; /* This prevents the text on the webpage from being highlighted by the user */
+    background-color: black;
 }
 
 /* This section contributes to the fade effect for the page that occurs when the page is loaded */
