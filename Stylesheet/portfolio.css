@@ -183,6 +183,13 @@ footer {
     animation: moveVideoText 5.75s; /* moveVideoText animation set to 5.75s to match the movenavText animation */
 }
 
+/* Screens that are 576px and smaller will not display the background video */
+@media screen and (max-width: 376px) {
+    #Typing_Video {
+        display: Black;
+    }
+}
+
 /* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
 @keyframes moveVideoText {
     from {left: -100vw;} /* This sets the position of the video text to above the viewport */
