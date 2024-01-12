@@ -90,8 +90,11 @@ img {
     border-radius: 8px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
     max-height: 100%; /* Ensures all images stay within the height of their container */
+    min-height: 440px;
+    min-width: auto;
     display: block; /* By specifying block display we can ensure our images are able to be centered */
     margin: auto auto auto auto; /* This centers all images */
+    object-fit: fill;
 }
 
 /* Image element hover effects */
@@ -101,8 +104,9 @@ img:hover {
 
 /* Styling for footer element */
 footer {
-    padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-    background-color: white;
+    padding: 1px; /* This gives the footer padding that is equal to 2% of the width of the element's area */
+    background-color: black;
+    color: white;
 }
 /***** END OF GENERAL STYLING *****/
 
@@ -212,7 +216,7 @@ footer {
 
 /* Slideshow section / container */
 #Slideshow_Container {
-    width: 39.5vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
+    width: 50vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
     height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
     padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
     position: relative; /* This sets the container relative to its normal positioning */
@@ -230,6 +234,14 @@ footer {
     height: auto; /* The height of the images is automatically adjusted based on the content, ie if your images are different sizes, they will display as different sizes */
     box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75); /* Adds a shadow around the slideshow images */
     width: 100%; /* The width of the images is automatically adjusted based on the content */
+    object-fit: fill;
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 500px;
+        height: 300px;
+    }
 }
 
 /* Next and previous buttons */
@@ -320,16 +332,16 @@ footer {
 .Column_1 {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
-    padding: 1.6%;
-    height: 450px;  /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    padding: 3%;
+    height: 470px;  /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: white; /* Sets the background color of the left columns */
 }
 
 .Column_2 {
     float: left;
     width: 50%;
-    padding: 1.6%;
-    height: 450px;
+    padding: 3%;
+    height: 470px;
     background-color: gold;
 }
 
