@@ -88,12 +88,8 @@ q {
 img {
     filter: grayscale(75%); /* This rids our pictures of 75% of their color */
     border-radius: 8px; /* Gives all images slightly rounded corners */
-    width: auto;
-    height: auto;
     max-width: 100%; /* Ensures all images stay within the width of their container */
     max-height: 100%; /* Ensures all images stay within the height of their container */
-    min-height: 100%;
-    min-width: 100%;
     display: block; /* By specifying block display we can ensure our images are able to be centered */
     margin: auto auto auto auto; /* This centers all images */
 }
@@ -105,9 +101,8 @@ img:hover {
 
 /* Styling for footer element */
 footer {
-    padding: 1px; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-    background-color: black;
-    color: white;
+    padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
+    background-color: white;
 }
 /***** END OF GENERAL STYLING *****/
 
@@ -170,6 +165,7 @@ footer {
 #Typing_Video {
     position: fixed; /* This fixes the video to the page */
     right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
+    bottom: 0; /* This ensures no space between the edge of the video and the bottom of the page */
     top: 0;
     bottom: 0;
     min-width: 100%; /* This ensures the video is displayed across the full width of the page */
@@ -216,9 +212,9 @@ footer {
 
 /* Slideshow section / container */
 #Slideshow_Container {
-    width: 50vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
+    width: 39.5vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
     height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
-    padding-top: 5%; /* Adds a small padding to the top of the slideshow container */
+    padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
     position: relative; /* This sets the container relative to its normal positioning */
     margin:auto; /* This will horizontally center the container on the page */
 }
@@ -232,7 +228,7 @@ footer {
 .Slideshow_Images {
     vertical-align: middle; /* This centers the images vertically within the slideshow container */
     height: auto; /* The height of the images is automatically adjusted based on the content, ie if your images are different sizes, they will display as different sizes */
-    box-shadow: 0px 5px 7px 7px rgba(0, 0, 0, .75); /* Adds a shadow around the slideshow images */
+    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75); /* Adds a shadow around the slideshow images */
     width: 100%; /* The width of the images is automatically adjusted based on the content */
 }
 
@@ -266,14 +262,14 @@ footer {
 /* Slideshow text */
 .text {
     color: white; 
-    padding: 2vw;
+    padding: 1vw;
     position: absolute; /* This ensures the text is positioned within the image */
     bottom: 0; /* This property sets the text at the bottom of the image */
     width: 100%; /* The element covers the full width of the image */
     text-align: center; /* The text is center aligned within the image */
     font-family: Perpetual, Rockwell Extra Bold;
     letter-spacing: .1vw; /* This gives slight spacing between the letters */
-    font-size: 1.70vw; /* Font size is relative to the size of the viewport width */
+    font-size: 1.5vw; /* Font size is relative to the size of the viewport width */
     background-color: rgba(0, 0, 0, 0.75); /* Gives a slightly transparent black background */
     font-weight: bold;
     border-radius: 0px 0px 7px 7px; /* Gives the text background rounded corners on the bottom left and right corners */
@@ -290,7 +286,6 @@ footer {
     display: inline-block; /* Allows the dots to sit next to eachother rather than on a new line */
     transition: background-color 0.6s ease; /* When clicked on the dots transition to a different color when clicked or hovered over (the affect is defined below) */
     z-index: 1; /* This ensures the dots will be displayed above any other elements */
-    padding-bottom: 1px;
 }
 
 /* Hover effect for slideshow dots */
@@ -322,44 +317,20 @@ footer {
     box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
 }
 
-/* Define styles for each column individually */
 .Column_1 {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 1.6%;
-    height: 350px;  /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
-    background-color: gold; /* Sets the background color of the left columns */
-}
-
-.Column_2 {
-    float: right;
-    width: 50%;
-    padding: 1.6%;
-    height: 350px;
-    background-color: white;
-}
-
-.Column_3 {
-    float: left;
-    width: 50%; /* This ensures the column takes up half of the page width */
-    padding: 1.6%;
-    height: 300px;  /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    height: 450px;  /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: white; /* Sets the background color of the left columns */
 }
 
-.Column_4 {
-    float: right;
+.Column_2 {
+    float: left;
     width: 50%;
     padding: 1.6%;
-    height: 300px;
+    height: 450px;
     background-color: gold;
-}
-
-/* Media query for small screens */
-@media screen and (max-width: 400px) {
-    .Column_1, .Column_2, .Column_3, .Column_4 {
-        height: 400px; /* Adjust this value as needed */
-    }
 }
 
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
@@ -466,11 +437,6 @@ button:hover, .form-container .btn:hover {
     -webkit-transition-duration: 1s;
     border-color: black;
 }
-
-.footer {
-    border-top-color: black;
-}
-
 /***** END OF CONTACT FORM STYLING *****/
 
 /***** Media Query Section *****/
@@ -557,12 +523,6 @@ button:hover, .form-container .btn:hover {
     .Column_2 {
         height: 550px;
     }
-    .Column_3 {
-        height: 550px;
-    }
-    .Column_4 {
-        height: 550px;
-    }
 }
 
 
@@ -573,12 +533,5 @@ button:hover, .form-container .btn:hover {
     }
 }
 
-/* Media query for small screens */
-@media screen and (max-width: 400px) {
-    img {
-        display: block;
-        margin: auto;
-    }
-}
 
 /***** End of Media Query Section *****/
