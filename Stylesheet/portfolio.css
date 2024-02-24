@@ -11,7 +11,7 @@ body {
     opacity: 1; /* This and transition affect the page loading fade in effect */
     transition: 3s opacity; /* This causes a 3 second fade in */
     letter-spacing: .2vw; /* vw is a relative measurement, 1vw is equal to 1% of the viewport width */
-    font-family: Avant Garde, Helvetica;
+    font-family: Helvetica;
     font-size: 1.5vw;
     overflow-x: hidden; /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
     user-select: none; /* This prevents the text on the webpage from being highlighted by the user */
@@ -90,11 +90,10 @@ img {
     border-radius: 8px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
     max-height: 100%; /* Ensures all images stay within the height of their container */
-    min-height: 440px;
+    min-height: auto;
     min-width: auto;
     display: block; /* By specifying block display we can ensure our images are able to be centered */
     margin: auto auto auto auto; /* This centers all images */
-    object-fit: fill;
 }
 
 /* Image element hover effects */
@@ -184,19 +183,12 @@ footer {
     background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparents background for the text to sit over */
     color: white; /* Makes the font color white */
     width: 100%; /* Ensures the video-text container fills the width of the video */
-    height: 100vh; /* This ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
-    padding-top: 2vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
+    height: 73vh; /* This ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveVideoText 5.75s; /* Animation for Safari 4.0 - 8.0 */
     animation: moveVideoText 5.75s; /* moveVideoText animation set to 5.75s to match the movenavText animation */
 }
 
-/* Screens that are 576px and smaller will not display the background video */
-@media screen and (max-width: 376px) {
-    #Typing_Video {
-        display: Black;
-    }
-}
 
 /* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
 @keyframes moveVideoText {
@@ -207,7 +199,9 @@ footer {
 
 /***** Slideshow Styling *****/
 #Slideshow_Background {
-    background: rgba(255, 255, 255, 0.35); /* This creates a slightly transparent white background that's placed over the video in the background */    
+    background: rgba(255, 255, 255, 0.35); /* This creates a slightly transparent white background that's placed over the video in the background */ 
+    width: auto;
+    height: auto;   
 }
 
 .mySlides{
@@ -216,12 +210,10 @@ footer {
 
 /* Slideshow section / container */
 #Slideshow_Container {
-    width: 50vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
-    height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
+    width: 39.5vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
     padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
-    position: relative; /* This sets the container relative to its normal positioning */
-    margin:auto; /* This will horizontally center the container on the page */
 }
+
 
 /* Remove the underline from the previous and next buttons on the slideshow */
 #Slideshow_Container a {
@@ -232,17 +224,32 @@ footer {
 .Slideshow_Images {
     vertical-align: middle; /* This centers the images vertically within the slideshow container */
     height: auto; /* The height of the images is automatically adjusted based on the content, ie if your images are different sizes, they will display as different sizes */
-    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75); /* Adds a shadow around the slideshow images */
+    box-shadow: 0px 4px 6px 8px rgba(0, 0, 0, .75); /* Adds a shadow around the slideshow images */
     width: 100%; /* The width of the images is automatically adjusted based on the content */
     object-fit: fill;
+    border-bottom: 5px;
 }
 
-@media (max-width: 600px) {
+
+@media (min-width: 300px) {
     img {
-        width: 500px;
-        height: 300px;
+        vertical-align: middle; /* This centers the images vertically */
+        height: auto; /* The height of the images is automatically adjusted based on the content, ie if your images are different sizes, they will display as different sizes */
+        box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, 0.5); /* Adds a shadow around the images */
+        width: auto; /* The width of the images is automatically adjusted based on the content */
+        object-fit: fill;
     }
 }
+
+@media (min-width: 300px)  {
+    #Slideshow_Container {
+        width: 39.5vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
+        padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
+        position: relative; /* This sets the container relative to its normal positioning */
+        margin: auto; /* This will horizontally center the container on the page */
+    }
+}
+
 
 /* Next and previous buttons */
 .Previous, .Next {
@@ -253,7 +260,7 @@ footer {
     padding: 2vw; /* Adds padding equal to 2% of the viewport width */
     color: darkgray; 
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 2.0vw;
     border-radius: 0 3px 3px 0; /* Adds a slightly rounded border on the top and bottom right corners */
     user-select: none; /* This property makes it so that the user cannot highlight the text */
     transition: 0.6s ease; /* This specifies the details of the hover transition for these elements */
@@ -293,11 +300,12 @@ footer {
     height: 1vw; /* The dots are sized relative to the viewport width */
     width: 1vw;
     margin: .25vw; /* adds additional spacing between the dots */ 
-    background-color: white; /* Makes the dots white */
+    background-color: gold; /* Makes the dots white */
     border-radius: 50%; /* Makes the dots circles by rounding each corner */
     display: inline-block; /* Allows the dots to sit next to eachother rather than on a new line */
     transition: background-color 0.6s ease; /* When clicked on the dots transition to a different color when clicked or hovered over (the affect is defined below) */
     z-index: 1; /* This ensures the dots will be displayed above any other elements */
+    border-bottom: 10px;
 }
 
 /* Hover effect for slideshow dots */
@@ -333,7 +341,7 @@ footer {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 3%;
-    height: 470px;  /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    height: 250px;  /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: white; /* Sets the background color of the left columns */
 }
 
@@ -341,7 +349,7 @@ footer {
     float: left;
     width: 50%;
     padding: 3%;
-    height: 470px;
+    height: 250px;
     background-color: gold;
 }
 
