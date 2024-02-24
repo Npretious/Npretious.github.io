@@ -183,7 +183,7 @@ footer {
     background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparents background for the text to sit over */
     color: white; /* Makes the font color white */
     width: 100%; /* Ensures the video-text container fills the width of the video */
-    height: 73vh; /* This ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
+    height: 100vh; /* This ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveVideoText 5.75s; /* Animation for Safari 4.0 - 8.0 */
     animation: moveVideoText 5.75s; /* moveVideoText animation set to 5.75s to match the movenavText animation */
