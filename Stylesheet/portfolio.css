@@ -76,7 +76,7 @@ p:hover {
 a {
     cursor: pointer; /* This ensures all links change the mouse to a pointer when hovered over or clicked */
     text-decoration: underline; /* This ensures all links are underlined */
-    color: rgb(177, 12, 12); /* This ensures all links are red */
+    color: white; /* This ensures all links are red */
 }
 
 /* Quotation elements */
@@ -211,7 +211,7 @@ footer {
 
 /* Slideshow section / container */
 #Slideshow_Container {
-    width: 39.5vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
+    width: 70vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
     padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
 }
 
@@ -244,17 +244,17 @@ footer {
 
 @media (min-width: 300px)  {
     #Slideshow_Container {
-        width: 40vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
-        padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
+        width: 35vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
+        padding-top: 3%; /* Adds a small padding to the top of the slideshow container */
         position: relative; /* This sets the container relative to its normal positioning */
         margin: auto; /* This will horizontally center the container on the page */
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1368px) {
     #Slideshow_Container {
-        width: 75vw; /* Relative sizing of the container for the slideshow set to 75% of the viewport width */
-        padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
+        width: 70vw; /* Relative sizing of the container for the slideshow set to 75% of the viewport width */
+        padding-top: 3%; /* Adds a small padding to the top of the slideshow container */
         position: relative; /* This sets the container relative to its normal positioning */
         margin: auto; /* This will horizontally center the container on the page */
     }
@@ -352,7 +352,7 @@ footer {
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 3%;
     height: 250px;  /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
-    background-color: white; /* Sets the background color of the left columns */
+    color: white; /* Sets the background color of the left columns */
 }
 
 .Column_2 {
@@ -486,7 +486,7 @@ button:hover, .form-container .btn:hover {
 
 @media screen and (min-width: 925px) and (max-width: 1050px) {
     p {
-        font-size: 2.25vw;
+        font-size: 1.8vw;
     }
 }
 
@@ -510,7 +510,7 @@ button:hover, .form-container .btn:hover {
 
 @media screen and (min-width: 2270px) {
     p {
-        font-size: 1.35vw;
+        font-size: 1.25vw;
     }
 }
 
