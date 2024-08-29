@@ -30,6 +30,7 @@ h1{
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
     color:gold;
+    font-size: 2.60vw;
 }
 
 h2{
@@ -507,13 +508,13 @@ button:hover, .form-container .btn:hover {
 }
 
 @media screen and (min-width: 1311px) and (max-width: 1535px) {
-    p, q, h1, h2, h3 {
+    p, q, h2, h3 {
         font-size: 1.75vw;
     }
 }
 
 @media screen and (min-width: 1536px) and (max-width: 2269px) {
-    p, q, h1, h2, h3 {
+    p, q, h2, h3 {
         font-size: 1.5vw;
     }
 }
