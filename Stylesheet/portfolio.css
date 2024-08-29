@@ -68,7 +68,7 @@ p:hover {
 
 /* Center class hover effect - This only affects the quote, github link, and footer */
 .center:hover {
-    transform: scale(1.1); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
+    transform: scale(1.01); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
     transition: transform 2s; /* This makes the transform effect last 2 seconds */
 }
 
@@ -86,7 +86,7 @@ q {
 
 /* Image elements */
 img {
-    filter: grayscale(75%); /* This rids our pictures of 75% of their color */
+    filter: grayscale(45%); /* This rids our pictures of 75% of their color */
     border-radius: 8px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
     max-height: 100%; /* Ensures all images stay within the height of their container */
@@ -98,7 +98,7 @@ img {
 
 /* Image element hover effects */
 img:hover {
-    filter: grayscale(5%); /* Brings back most of the image's color when hovered over */
+    filter: grayscale(75%); /* Brings back most of the image's color when hovered over */
 }
 
 /* Styling for footer element */
@@ -110,6 +110,7 @@ footer {
 /***** END OF GENERAL STYLING *****/
 
 /***** NAVBAR STYLING *****/
+
 .Navbar {
     overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
     background-color: #ffffff; /* This colors the navbar is white */
@@ -243,7 +244,16 @@ footer {
 
 @media (min-width: 300px)  {
     #Slideshow_Container {
-        width: 39.5vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
+        width: 40vw; /* Relative sizing of the container for the slideshow set to 39.5% of the viewport width */
+        padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
+        position: relative; /* This sets the container relative to its normal positioning */
+        margin: auto; /* This will horizontally center the container on the page */
+    }
+}
+
+@media (max-width: 768px) {
+    #Slideshow_Container {
+        width: 75vw; /* Relative sizing of the container for the slideshow set to 75% of the viewport width */
         padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
         position: relative; /* This sets the container relative to its normal positioning */
         margin: auto; /* This will horizontally center the container on the page */
@@ -461,17 +471,6 @@ button:hover, .form-container .btn:hover {
 
 /***** Media Query Section *****/
 /*Media rules for paragraph font size for different screen sizes*/
-@media screen and (max-width: 527px) {
-    p {
-        font-size: 3.75vw;
-    }
-}
-
-@media screen and (min-width: 528px) and (max-width: 660px) {
-    p {
-        font-size: 3.5vw;
-    }
-}
 
 @media screen and (min-width: 661px) and (max-width: 799px) {
     p {
