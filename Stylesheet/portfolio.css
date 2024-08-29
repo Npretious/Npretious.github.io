@@ -32,6 +32,13 @@ h1{
     color:gold;
 }
 
+h2{
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 4vw;
+}
+
 /* Heading 1 element hover effect */
 h1:hover {
     filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
@@ -53,6 +60,7 @@ p {
     font-size: 2.5vw; /* Relative font sizing equal to 2.5% of the viewport width */
     padding-left: 1vw; /* Relative padding equal to 1% of the viewport width */
     padding-right: 1vw; /* Relative padding equal to 1% of the viewport width */
+    line-height: 2;
 }
 
 /* Paragraph element hover effect */
@@ -82,6 +90,7 @@ a {
 /* Quotation elements */
 q {
     font-style: italic; /* Makes the quote italicized */
+    line-height: 2;
 }
 
 /* Image elements */
@@ -103,7 +112,8 @@ img:hover {
 
 /* Styling for footer element */
 footer {
-    padding: 1px; /* This gives the footer padding that is equal to 2% of the width of the element's area */
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: black;
     color: white;
 }
@@ -347,6 +357,7 @@ footer {
 }
 
 .Column_1 {
+    background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparents background for the text to sit over */
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 3%;
@@ -472,43 +483,43 @@ button:hover, .form-container .btn:hover {
 /*Media rules for paragraph font size for different screen sizes*/
 
 @media screen and (min-width: 661px) and (max-width: 799px) {
-    p {
+    p, q, h1, h2, h3 {
         font-size: 2.75vw;
     }
 }
 
 @media screen and (min-width: 800px) and (max-width: 924px) {
-    p {
+    p, q, h1, h2, h3 {
         font-size: 2.5vw;
     }
 }
 
 @media screen and (min-width: 925px) and (max-width: 1050px) {
-    p {
+    p, q, h1, h2, h3 {
         font-size: 1.8vw;
     }
 }
 
 @media screen and (min-width: 1051px) and (max-width: 1310px) {
-    p {
+    p, q, h1, h2, h3 {
         font-size: 2vw;
     } 
 }
 
 @media screen and (min-width: 1311px) and (max-width: 1535px) {
-    p {
+    p, q, h1, h2, h3 {
         font-size: 1.75vw;
     }
 }
 
 @media screen and (min-width: 1536px) and (max-width: 2269px) {
-    p {
+    p, q, h1, h2, h3 {
         font-size: 1.5vw;
     }
 }
 
 @media screen and (min-width: 2270px) {
-    p {
+    p, q, h1, h2, h3 {
         font-size: 1.25vw;
     }
 }
@@ -546,7 +557,7 @@ button:hover, .form-container .btn:hover {
 
 /*Media rule to remove margin-top from h1 elements for extra large screens (so that the paragraph text fits in the column*/
 @media screen and (min-width: 2000px) {
-    h1{
+    h1, h2{
         margin-top: 0;
     }
 }
