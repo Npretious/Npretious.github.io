@@ -317,8 +317,8 @@ footer {
 /* Styling of the dots under the slideshow */
 .dot {
     cursor: pointer; /* The cursor changes to pointer when hovered over the dots */
-    height: 1vw; /* The dots are sized relative to the viewport width */
-    width: 1vw;
+    height: 0.8vw; /* The dots are sized relative to the viewport width */
+    width: 0.8vw;
     margin: .25vw; /* adds additional spacing between the dots */ 
     background-color: gold; /* Makes the dots white */
     border-radius: 50%; /* Makes the dots circles by rounding each corner */
