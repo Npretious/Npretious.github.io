@@ -300,7 +300,7 @@ footer {
 
 /* Slideshow text */
 .text {
-    color: gold; 
+    color: white; 
     padding: 1vw;
     position: absolute; /* This ensures the text is positioned within the image */
     bottom: 0; /* This property sets the text at the bottom of the image */
@@ -541,7 +541,7 @@ button:hover, .form-container .btn:hover {
     }
 
     .white-text {
-        font-size: 2.5vw;
+        font-size: 4.5vw;
     }
 
     .text {
